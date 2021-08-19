@@ -31,3 +31,21 @@
 
 en:
   hello: "Hello world"
+  welcome: "Welcome"
+  welcome_description: "This is Crypto Wallet"
+  actions:
+    editing_coin: "Editing Coin"
+    editing_mining_type: "Editando Mining Type"
+  new:
+    coin: "New Coin"
+    mining_type: "New Mining Type"
+  menu_msg: "To start using the program, choose an option:"
+  locale:
+    actual_locale: "English (International)"
+  links:
+    show: "Show"
+    edit: "Edit"
+    destroy: "Destroy"
+    back: "Back"
+  confirmations:
+    are_you_sure: "Are you sure?"

@@ -1,6 +1,6 @@
 class CoinsController < ApplicationController
   before_action :set_coin, only: %i[ show edit update destroy ]
-
+  before_action :set_mining_type_options, only: %i[ new create edit update]
   # GET /coins or /coins.json
   def index
     @coins = Coin.all
@@ -51,7 +51,7 @@ class CoinsController < ApplicationController
   def destroy
     @coin.destroy
     respond_to do |format|
-      format.html { redirect_to coins_url, notice: "Coin was successfully destroyed." }
+      format.html { redirect_to coins_path, notice: "Coin was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -62,8 +62,12 @@ class CoinsController < ApplicationController
       @coin = Coin.find(params[:id])
     end
 
+    def set_mining_type_options
+      @mining_type_options = MiningType.all.pluck(:description, :id)
+    end
+
     # Only allow a list of trusted parameters through.
     def coin_params
-      params.require(:coin).permit(:description, :acronym, :url_image)
+      params.require(:coin).permit(:description, :acronym, :url_image, :mining_type_id)
     end
 end

@@ -1,0 +1,22 @@
+pt-BR:
+  hello: "Olá mundo"
+  welcome: "Seja bem vindo!"
+  welcome_description: "Este é o Crypto Wallet."
+  actions:
+    editing_coin: "Editando Moeda"
+    editing_mining_type: "Editando Tipo de Mineração"
+  new:
+    coin: "Nova Moeda"
+    mining_type: "Tipo de Mineração"
+  menu_msg: "Para começar selecione uma das opções abaixo:"
+  coins: "Moedas"
+  mining_types: "Tipos de Mineração"
+  locale:
+    actual_locale: "Português do Brasil"
+  links:
+    show: "Mostrar"
+    edit: "Editar"
+    destroy: "Apagar"
+    back: "Voltar"
+  confirmations:
+    are_you_sure: "Tem certeza?"
